@@ -1,7 +1,13 @@
-import React from "react";
+import { React, useState } from "react";
 import { EXAMPLES } from "../data";
+import TabButton from "./TabButton";
 
 function Examples() {
+  const [selectedTopic, setSelectedTopic] = useState();
+
+  function handleSelect(selectedButton) {
+    setSelectedTopic(selectedButton);
+  }
   return (
     <section id="examples">
       <h2>Examples</h2>
