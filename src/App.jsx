@@ -4,11 +4,6 @@ import CoreConcepts from "./components/CoreConcepts";
 import Examples from "./components/Examples";
 
 function App() {
-  const [selectedTopic, setSelectedTopic] = useState();
-
-  function handleSelect(selectedButton) {
-    setSelectedTopic(selectedButton);
-  }
   return (
     <div>
       <Header />
